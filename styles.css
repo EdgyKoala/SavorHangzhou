@@ -151,12 +151,26 @@
 }
 /* Footer Styles */
 footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 60px;
-    background-color:rgba(48, 119, 127, 0.932);
-    display: flex;
+  background-color: rgba(48, 119, 127, 0.932);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer button {
+    background-color: rgb(201, 239, 231);
+    color: rgba(12, 34, 67, 0.623);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+footer button:hover {
+    background-color: rgba(12, 34, 67, 0.623);
+    color: white;
 }
 
 @media only screen and (max-width: 550px) {
