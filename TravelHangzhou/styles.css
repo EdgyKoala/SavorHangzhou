@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVIGATION BAR */
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.site-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color:rgba(48, 119, 127, 0.932);
+    display: flex;
+}
+.site-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    align-items: center;
+    display: flex;
+}
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.site-navigation a:hover {
+    color:bisque
+}
+.site-navigation li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* Banner Section */
+.site-header {
+    background-image: url('./images/banner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 60px; /* Adjusted for fixed navbar */
+}
+.site-header h1 {
+    color: white;
+    text-align: center;
+    padding-top: 150px; /* Adjusted for better vertical alignment */
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.site-header .site-name {
+    color:rgba(12, 34, 67, 0.623);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.site-header p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+/* Main Content */
+.dishes-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(48, 119, 127, 0.25);
+    gap: 20px;
+
+}
+.dishes-container h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+    color:rgba(28, 42, 42, 0.805);
+    padding: 10px;
+
+}
+.dishes-container h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color:rgba(13, 16, 16, 0.805);
+ 
+}
+.dishes img{
+    width:15rem;
+    height:15rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    align-self: top;
+}
+.dishes h3 {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(241, 243, 228, 0.753);
+}
+.dishes p {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(12, 34, 67, 0.623);
+    width: 15rem;
+    background-color: rgba(241, 243, 228, 0.753);
+    margin-top: -5px
+}
+/* Tour Guide Styles */
+.guide-container {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(48, 119, 127, 0.25);
+    gap: 20px;
+}
+.guide {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: rgb(41, 143, 159) 2px solid;
+    border-radius: 10px;
+}
+.guide img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.guide h3 {
+    text-align: center;
+    font-size: 1.5em;
+   margin-top: -10px;
+   color: white;
+}
+.guide p {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(12, 34, 67, 0.5);
+    color: white;
+    width: 200px;
+    margin-top: -5px;
+}
+/* Footer Styles */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background-color:rgba(48, 119, 127, 0.932);
+    display: flex;
+}
+
+@media only screen and (max-width: 550px) {
+    .site-navigation li {
+        display: none;
+    }
+
+    .site-header p {
+        margin-top: 5px;
+    }
+}
